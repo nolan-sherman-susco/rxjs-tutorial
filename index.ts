@@ -48,3 +48,9 @@ function getProfile(): Observable<Profile> {
  * Using a single Observable
  */
 
+//#Step 1.
+//We can create a new observable by calling our authorize function 
+let obs = authorize({Username:"jSmith", Password: "secretPassword"})
+//So far, no requests has been made. We just setup the observable that will make the request.
+
+
